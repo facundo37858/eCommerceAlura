@@ -3,3 +3,6 @@ body {
     color: var(--color-primary);
     font-size: 16px;
 }
+footer {
+    color: var(--font-family-title);
+}
