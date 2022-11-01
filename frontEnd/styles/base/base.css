@@ -1,0 +1,13 @@
+@import url('./normalize.css');
+@import url('./reset.css');
+
+:root {
+    --color-background:#FFFFFF;
+    --color-backgroud-body:#E5E5E5;
+    --color-background-contact:#EAF2FD;
+
+    --color-primary:#FFFFFF;
+    --color-secundary:#2A7AE4;
+
+    --font-family-title: 'Raleway', sans-serif;
+}
