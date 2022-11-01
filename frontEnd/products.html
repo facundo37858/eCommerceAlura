@@ -10,9 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/base/base.css">in
-    <link rel="stylesheet" href="./styles/products/products.css">
+    <link rel="stylesheet" href="./styles/products/styles.css">
     <link rel="stylesheet" href="./styles/products/header.css">
     <link rel="stylesheet" href="./styles/products/banner.css">
+    <link rel="stylesheet" href="./styles/products/products.css">
     <title>E-Commerce-Alura</title>
 </head>
 <body>
@@ -40,99 +41,126 @@
         </div>
     </section>
 
-    <section title="products">
-        <div>
-            <h3 style="color: blue; "title="section-name">Star Wars</h3>
-            <a href="#">Ver todo<i class="fa-solid fa-arrow-right"></i></a>
-            <ul>
-                <li>
-                    <img src="" alt="product">
-                    <p title="name-product">Producto XYZ</p>
-                    <p title="price-product">$$$$</p>
-                    <a  href="#">Ver producto</a>
+    <section class="products" title="products">
+        <div class="products__container">
+            <div class="products__container__section">
+                <h3 class="products__container__section__title">Star Wars</h3>
+                <a class="products__container__section__link" href="#">Ver todo<i class="fa-solid fa-arrow-right"></i></a>
+    
+            </div>
+            <ul class="products__container__itmes">
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="./assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">R$ 60,00</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
                 </li>
-                <li>
-                    <img src="" alt="product">
-                    <p title="name-product">Producto XYZ</p>
-                    <p title="price-product">$$$$</p>
-                    <a  href="#">Ver producto</a>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="./assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">R$ 60,00</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
                 </li>
-                <li>
-                    <img src="" alt="product">
-                    <p title="name-product">Producto XYZ</p>
-                    <p title="price-product">$$$$</p>
-                    <a  href="#">Ver producto</a>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="./assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">R$ 60,00</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
                 </li>
-                <li>
-                    <img src="" alt="product">
-                    <p title="name-product">Producto XYZ</p>
-                    <p title="price-product">$$$$</p>
-                    <a  href="#">Ver producto</a>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="./assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">R$ 60,00</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
                 </li>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="./assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">R$ 60,00</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
+                </li>
+
             </ul>
         </div>
-        <div>
-            <h3 style="color: blue; "title="section-name">Star Wars</h3>
-            <a href="#">Ver todo<i class="fa-solid fa-arrow-right"></i></a>
-            <ul>
-                <li>
-                    <img src="" alt="product">
-                    <p title="name-product">Producto XYZ</p>
-                    <p title="price-product">$$$$</p>
-                    <a  href="#">Ver producto</a>
+
+        <!-- <div class="products__container">
+            <h3 class="products__container__title">Star Wars</h3>
+            <a class="products__container__link" href="#">Ver todo<i class="fa-solid fa-arrow-right"></i></a>
+            <ul class="products__container__itmes">
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="./assets/imags/star-wars.png"="./assets/imags/star-wars.png" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">$$$$</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
                 </li>
-                <li>
-                    <img src="" alt="product">
-                    <p title="name-product">Producto XYZ</p>
-                    <p title="price-product">$$$$</p>
-                    <a  href="#">Ver producto</a>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="./assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">$$$$</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
                 </li>
-                <li>
-                    <img src="" alt="product">
-                    <p title="name-product">Producto XYZ</p>
-                    <p title="price-product">$$$$</p>
-                    <a  href="#">Ver producto</a>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="./assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">$$$$</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
                 </li>
-                <li>
-                    <img src="" alt="product">
-                    <p title="name-product">Producto XYZ</p>
-                    <p title="price-product">$$$$</p>
-                    <a  href="#">Ver producto</a>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="./assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">$$$$</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
                 </li>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="./assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">$$$$</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
+                </li>
+
             </ul>
         </div>
-        <div>
-            <h3 style="color: blue; "title="section-name">Star Wars</h3>
-            <a href="#">Ver todo<i class="fa-solid fa-arrow-right"></i></a>
-            <ul>
-                <li>
-                    <img src="" alt="product">
-                    <p title="name-product">Producto XYZ</p>
-                    <p title="price-product">$$$$</p>
-                    <a  href="#">Ver producto</a>
+
+        <div class="products__container">
+            <h3 class="products__container__title">Star Wars</h3>
+            <a class="products__container__link" href="#">Ver todo<i class="fa-solid fa-arrow-right"></i></a>
+            <ul class="products__container__itmes">
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="./assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">$$$$</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
                 </li>
-                <li>
-                    <img src="" alt="product">
-                    <p title="name-product">Producto XYZ</p>
-                    <p title="price-product">$$$$</p>
-                    <a  href="#">Ver producto</a>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="./assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">$$$$</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
                 </li>
-                <li>
-                    <img src="" alt="product">
-                    <p title="name-product">Producto XYZ</p>
-                    <p title="price-product">$$$$</p>
-                    <a  href="#">Ver producto</a>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="./assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">$$$$</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
                 </li>
-                <li>
-                    <img src="" alt="product">
-                    <p title="name-product">Producto XYZ</p>
-                    <p title="price-product">$$$$</p>
-                    <a  href="#">Ver producto</a>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="./assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">$$$$</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
                 </li>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="./assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">$$$$</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
+                </li>
+
             </ul>
-        </div>
-        
+        </div> -->
+
     </section>
+
     <section>
         <div>
             <img src="" alt="logo">
