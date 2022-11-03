@@ -10,7 +10,9 @@
     width: 176px;
     height: 50px;
 }
-
+.aboutme__list{
+    list-style: none;
+}
 .aboutme__list__item{
     margin: 0 0 1rem;
     font-weight: 500;

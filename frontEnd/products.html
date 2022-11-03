@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./styles/products/banner.css">
     <link rel="stylesheet" href="./styles/products/products.css">
     <link rel="stylesheet" href="./styles/products/aboutme.css">
+    <link rel="stylesheet" href="./styles/products/contact.css">
+    <link rel="stylesheet" href="./styles/products/footer.css">
     <title>E-Commerce-Alura</title>
 </head>
 <body>
@@ -196,22 +198,28 @@
     </section>
 
     <section title="contact">
-        <div>
-            <form action="" method="post">
-                <label style="color: blue;""  for="">
-                    Nombre <input type="text">
-                </label>
-                <label style="color: blue; "" for="">
-                    Mensaje
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </label>
-                <input type="submit">
+        <div class="contact">
+            <p class="contact__title">Hable con nosotros</p>
+            <form action="" method="post" class="contact__form">
+                <div class="contact__form__input">
+                    <label for="">
+                        <p class="contact__form__input__label">Nombre</p> 
+                        <input class="contact__form__input__name " type="text">
+                    </label>
+                </div>
+                
+                <textarea 
+                class="contact__form__msj" 
+                placeholder="Escribe tu mensaje" 
+                cols="30" rows="10"></textarea>
+                
+                <input class="contact__form__btn" type="submit" value="Enviar mensaje">
             </form>
         </div>
     </section>
- 
-    
+
     <script src="./controllers/index.js"></script>
+    
     <footer>
         <p>Desarrollado por Facundo</p>
         <p>2021</p>

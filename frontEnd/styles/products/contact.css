@@ -1,0 +1,79 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: var(--color-background-contact);
+}
+
+.contact__title{
+    margin: 0 0 1rem 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.125rem;
+    color: var(--color-text-primary);
+}
+
+.contact__form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+.contact__form__input{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 328px;
+    height: 56px;
+    border-radius: 4px;
+    background-color: var(--color-primary);
+    margin: 1rem 0;
+}
+
+.contact__form__input__label{
+    font-size: .75rem;
+    line-height: 1rem;
+    font-weight: 500;
+    color: var(--color-text-secundary);
+    margin: 1rem 0.5rem 0;
+}
+
+.contact__form__input__name{
+    background-color: var(--color-primary);
+    border: none;
+    margin: 0 0 0.5rem 0.75rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+
+.contact__form__input__name:focus-visible{
+    border: none;
+    outline: none;
+}
+
+.contact__form__msj{
+    width: 93%;
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 1rem 0.75rem 0;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.contact__form__btn{
+    width: 8.3rem;
+    height: 2.5rem;
+    border: none;
+    font-weight: 600;
+    font-size: .875rem;
+    background-color: var(--color-secundary);
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
