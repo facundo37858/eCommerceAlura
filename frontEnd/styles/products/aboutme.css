@@ -27,3 +27,59 @@
     font-weight: 500;
     color: var(--color-text-primary);
 }
+
+@media screen and (min-width: 1024px) {
+    .aboutme {
+        margin-top: 4rem;
+        flex-direction: row;
+        text-align:right;
+    }
+
+    .aboutme__list{
+        margin: 0;
+    }
+
+    .aboutme__menu{
+        display: flex;
+        margin-top: 4rem;
+        gap: 7rem;
+    }
+
+    .aboutme__list__item {
+        margin: 0 0 1.5rem;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .aboutme {
+        margin-top: 4rem;
+        flex-direction: row;
+        text-align:right;
+        display: block;
+        
+    }
+
+    .aboutme__list{
+        margin: 0;
+    }
+
+    .aboutme__menu{
+        display: flex;
+        margin-top: 4rem;
+        gap: 7rem;
+        margin-left: 2rem;
+        justify-content: center;
+    }
+
+    .aboutme__list__item {
+        margin: 0 0 1.5rem;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        text-align: center;
+    }
+}

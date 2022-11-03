@@ -26,7 +26,11 @@
             <button class="header__button">Login</button>
             <div class="header__search">
                 <i class="fa-solid fa-magnifying-glass header__icon"></i>
-                <input class="header__search__input" type="text">
+                <input 
+                class="header__search__input" 
+                type="text"
+                placeholder="¿Qué deseas buscar?"
+                >
                 
             </div>
         </nav>
@@ -171,33 +175,57 @@
 
     </section>
 
-    <section title="aboutme">
-        <div class="aboutme">
-            <img class="aboutme__image" src="./assets/imags/logo.svg" alt="logo">
-            <ul class="aboutme__list">
-                <li class="aboutme__list__item">
-                    <a href="">Quienes somos</a>
-                </li>
-                <li class="aboutme__list__item">
-                    <a href="">Política de privacidad</a>
-                </li>
-                <li class="aboutme__list__item">
-                    <a href="">Programa de fidelidad</a>
-                </li>
-                <li class="aboutme__list__item">
-                    <a href="">Nuestras tiendas</a>
-                </li>
-                <li class="aboutme__list__item">
-                    <a href="">Quiero ser franquiciado</a>
-                </li>
-                <li class="aboutme__list__item">
-                    <a href="">Anúncie aquí</a>
-                </li>
-            </ul>
+    <section title="aboutme" class="aboutme">
+        <div class="aboutme__menu">
+            <div>
+                <img class="aboutme__image" src="./assets/imags/logo.svg" alt="logo">
+                <ul class="aboutme__list">
+                    <li class="aboutme__list__item">
+                        <a href="">Quienes somos</a>
+                    </li>
+                    <li class="aboutme__list__item">
+                        <a href="">Política de privacidad</a>
+                    </li>
+                    <li class="aboutme__list__item">
+                        <a href="">Programa de fidelidad</a>
+                    </li>
+                    <li class="aboutme__list__item">
+                        <a href="">Nuestras tiendas</a>
+                    </li>
+                    <li class="aboutme__list__item">
+                        <a href="">Quiero ser franquiciado</a>
+                    </li>
+                    <li class="aboutme__list__item">
+                        <a href="">Anúncie aquí</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="contact">
+                <p class="contact__title">Hable con nosotros</p>
+                <form action="" method="post" class="contact__form">
+                    <div class="contact__form__input">
+                        <label for="">
+                            <p class="contact__form__input__label">Nombre</p> 
+                            <input class="contact__form__input__name " type="text">
+                        </label>
+                    </div>
+                    
+                    <textarea 
+                    class="contact__form__msj" 
+                    placeholder="Escribe tu mensaje" 
+                    cols="30" rows="10"></textarea>
+                    
+                    <input class="contact__form__btn" type="submit" value="Enviar mensaje">
+                </form>
+            </div>
         </div>
+
+
     </section>
 
-    <section title="contact">
+    <!-- <section title="contact">
         <div class="contact">
             <p class="contact__title">Hable con nosotros</p>
             <form action="" method="post" class="contact__form">
@@ -216,7 +244,7 @@
                 <input class="contact__form__btn" type="submit" value="Enviar mensaje">
             </form>
         </div>
-    </section>
+    </section> -->
 
     <script src="./controllers/index.js"></script>
     

@@ -69,3 +69,43 @@
     font-weight: 700;
 
 }
+
+@media screen and (min-width: 1024px) {
+    .products__container {
+        display: grid;
+        grid-template-rows: 2.375rem 15.75rem;
+    }
+
+    .products__container__section{
+        margin: 0 15rem;
+    }
+
+    .products__container__itmes{
+        
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 1rem;
+        
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .products__container {
+        display: grid;
+        grid-template-rows: 2.375rem 15.75rem;
+    }
+
+    .products__container__section{
+        margin: 0 15rem;
+    }
+
+    .products__container__itmes{
+        
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 1rem;
+        
+    }
+}

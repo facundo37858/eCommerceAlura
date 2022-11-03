@@ -80,3 +80,49 @@
     color: var(--color-primary);
     margin-bottom: 1rem;
 }
+
+@media screen and (min-width: 1024px) {
+    .contact__title{
+        margin: 0;
+    }
+
+    .contact__form{
+        margin: 0;
+    }
+
+    .contact__form__input{
+        width: 35rem;
+    }
+
+    .contact__form__input__label{
+        display: flex;
+    }
+
+    .contact__form__msj{
+        width: 33.5rem;
+        height: 5.125rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contact__title{
+        margin: .5rem 0 0 0;
+    }
+
+    .contact__form{
+        margin: 0;
+    }
+
+    .contact__form__input{
+        width: 27.125rem;
+    }
+
+    .contact__form__input__label{
+        display: flex;
+    }
+
+    .contact__form__msj{
+        width: 25.6rem;
+        height: 5.125rem;
+    }
+}
