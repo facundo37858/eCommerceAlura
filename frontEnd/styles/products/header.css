@@ -68,6 +68,7 @@
         font-size: .875rem;
         color: var(--color-text-secundary);
         line-height: 1rem;
+        display: block;
     }
 
     .header__search__input:focus-visible{
