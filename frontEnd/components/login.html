@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/dfb27723a2.js" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/base/base.css">
+    <link rel="stylesheet" href="../styles/products/styles.css">
+    <link rel="stylesheet" href="../styles/products/header.css">
+    <link rel="stylesheet" href="../styles/products/aboutme.css">
+    <link rel="stylesheet" href="../styles/products/contact.css">
+    <link rel="stylesheet" href="../styles/products/footer.css">
+    <link rel="stylesheet" href="../styles/login/login.css">
+    <title>E-Commerce-Alura</title>
+</head>
+<body>
+    <header>
+        <nav class="header">
+            <img class="header__imag" src="../assets/imags/logo.svg" alt="logo">
+           
+            <div class="header__search">
+                <i class="fa-solid fa-magnifying-glass header__icon"></i>
+                <input 
+                class="header__search__input" 
+                type="text"
+                placeholder="¿Qué deseas buscar?"
+                >
+                
+            </div>
+        </nav>
+    </header>
+
+    <section title="sign-in">
+        <div class="login__container">
+            <form class="login__form" action="" method="post">
+                <p class="login__form__title">Iniciar Sesión</p>
+                <input 
+                class="login__form__user" 
+                type="text"
+                placeholder="Escriba su correo electrónico"
+                >
+                <input  
+                class="login__form__password" 
+                type="text"
+                placeholder="Escriba su contraseña"
+                >
+                <input  
+                class="login__form__submit" 
+                type="submit" 
+                value="Entrar">
+            </form>
+        </div>
+    </section>
+
+    <section title="aboutme" class="aboutme">
+        <div class="aboutme__menu">
+            <div class="aboutme__menu__container">
+                <img class="aboutme__image" src="../assets/imags/logo.svg" alt="logo">
+                <ul class="aboutme__list">
+                    <li class="aboutme__list__item">
+                        <a href="">Quienes somos</a>
+                    </li>
+                    <li class="aboutme__list__item">
+                        <a href="">Política de privacidad</a>
+                    </li>
+                    <li class="aboutme__list__item">
+                        <a href="">Programa de fidelidad</a>
+                    </li>
+                    <li class="aboutme__list__item">
+                        <a href="">Nuestras tiendas</a>
+                    </li>
+                    <li class="aboutme__list__item">
+                        <a href="">Quiero ser franquiciado</a>
+                    </li>
+                    <li class="aboutme__list__item">
+                        <a href="">Anúncie aquí</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <p class="contact__title">Hable con nosotros</p>
+                <form action="" method="post" class="contact__form">
+                    <div class="contact__form__input">
+                        <label for="">
+                            <p class="contact__form__input__label">Nombre</p> 
+                            <input class="contact__form__input__name " type="text">
+                        </label>
+                    </div>
+                    
+                    <textarea 
+                    class="contact__form__msj" 
+                    placeholder="Escribe tu mensaje" 
+                    cols="30" rows="10"></textarea>
+                    
+                    <input class="contact__form__btn" type="submit" value="Enviar mensaje">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Desarrollado por Facundo</p>
+        <p>2021</p>
+    </footer>
+</body>
+</html>
