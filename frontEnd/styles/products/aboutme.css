@@ -6,9 +6,11 @@
     text-align: center;
     background-color: var(--color-background-contact);
 }
+
 .aboutme__image {
     width: 176px;
     height: 50px;
+    margin-top: 7rem;
 }
 .aboutme__list{
     list-style: none;
@@ -33,6 +35,14 @@
         margin-top: 4rem;
         flex-direction: row;
         text-align:right;
+    }
+    .aboutme__menu__container{
+        display: flex;
+        gap: 7rem;
+        margin-top: 7rem;
+    }
+    .aboutme__image {
+        margin-top: 0;
     }
 
     .aboutme__list{

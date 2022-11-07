@@ -7,7 +7,7 @@
 }
 
 .contact__title{
-    margin: 0 0 1rem 1rem;
+    margin: 2rem 0 1rem 1rem;
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.125rem;
@@ -40,6 +40,7 @@
     font-weight: 500;
     color: var(--color-text-secundary);
     margin: .5rem .5rem 0;
+    display: flex;
 }
 
 .contact__form__input__name{
@@ -78,7 +79,7 @@
     font-size: .875rem;
     background-color: var(--color-secundary);
     color: var(--color-primary);
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -106,7 +107,7 @@
 
 @media screen and (min-width: 768px) {
     .contact__title{
-        margin: .5rem 0 0 0;
+        margin: 7rem 0 0 0;
     }
 
     .contact__form{
