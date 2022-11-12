@@ -1,0 +1,67 @@
+.addProduct{
+    background-color: var(--color-backgroud-body);
+    padding-bottom: 2rem;
+}
+
+.header__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10px;
+    align-items: flex-start;
+}
+
+.header__container__title{
+    color: var(--color-text-primary);
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 700;
+}
+
+.header__container__botton{
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1rem;
+    color: var(--color-primary);
+    border: none;
+    background-color: var(--color-secundary);
+    width: 9rem;
+    height: 2.5rem;
+    cursor: pointer;
+
+}
+
+.products__container{
+    margin-top: 1rem;
+}
+
+.product__container__itme__img{
+    position: relative;
+}
+
+.icon__trash {
+    position: absolute;
+    z-index: 1;
+    left: 100px;
+    top: 11px;
+    color: var(--color-background);
+    cursor: pointer;
+
+}
+
+.icon__pen{
+    position: absolute;
+    z-index: 1;
+    left: 130px;
+    top:11px;
+    color: var(--color-background);
+    cursor: pointer;
+
+}
+
+.aboutme__image{
+    margin-top: 2rem;
+}
+.contact__form__btn{
+    margin-bottom: 1rem;
+}
