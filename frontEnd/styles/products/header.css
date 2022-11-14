@@ -17,6 +17,7 @@
     font-weight: 600;
     font-size: .875rem;
     color: var(--color-secundary);
+    cursor: pointer;
 }
 .header__search{
     /* display: flex;
