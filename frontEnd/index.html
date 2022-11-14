@@ -23,7 +23,12 @@
     <header>
         <nav class="header">
             <img class="header__imag" src="./assets/imags/logo.svg" alt="logo">
-            <button class="header__button">Login</button>
+            <button class="header__button" 
+            data-login-button
+            onclick="naviateLogin()"
+            >
+            Login
+            </button>
             <div class="header__search">
                 <i class="fa-solid fa-magnifying-glass header__icon"></i>
                 <input 
@@ -31,7 +36,6 @@
                 type="text"
                 placeholder="¿Qué deseas buscar?"
                 >
-                
             </div>
         </nav>
     </header>

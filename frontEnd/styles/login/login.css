@@ -49,6 +49,7 @@
     font-weight: 600;
     line-height: 1rem;
     padding: .75rem 2.125rem;
+    font-size: 1.125rem;
 
 }
 .aboutme{
@@ -57,4 +58,23 @@
 
 .aboutme__menu{
     margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .login__form__user {
+        width: 50%;
+    }
+
+    .login__form__password{
+        width: 50%;
+    }
+
+    .login__form__submit{
+        width: 54%;
+        height: 3.9rem;
+    }
+
+    .login__form__title {
+        font-size: 1.125rem;
+    }
 }
