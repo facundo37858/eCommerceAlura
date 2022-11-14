@@ -41,7 +41,12 @@
             <div class="banner__contents">
                 <h2 class="banner__contents__title" >Febrero Promocional</h2>
                 <p class="banner__contents__description" >Productos selecionados con 33% de descuento</p>
-                <button class="banner__contents__btn" >Ver Consolas</button>
+                <button 
+                class="banner__contents__btn" 
+                onclick="navigateToSecction('consolas')"
+                >
+                Ver Consolas
+                </button>
             </div>
             <img class="banner__imag" src="./assets/imags/offer.jfif"  alt="oferta">
 
@@ -93,7 +98,7 @@
 
         <div class="products__container">
             <div class="products__container__section">
-                <h3 class="products__container__section__title">Consolas</h3>
+                <h3 id="consolas" class="products__container__section__title">Consolas</h3>
                 <a class="products__container__section__link" href="#">Ver todo<i class="fa-solid fa-arrow-right"></i></a>
     
             </div>
