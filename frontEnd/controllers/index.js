@@ -4,5 +4,5 @@ const navigateToSecction = (idSecction) => {
 }
 
 const naviateLogin = () => {
-    location.href = "../frontEnd/components/login.html"
+    location.href = "components/login.html"
 }
