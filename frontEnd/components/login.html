@@ -42,19 +42,31 @@
                 <p class="login__form__title">Iniciar Sesión</p>
                 <input 
                 class="login__form__user" 
-                type="text"
                 placeholder="Escriba su correo electrónico"
-                >
+                type="email"
+                required
+                data-tipo="user"
+                ><span class="input-message-error-user"></span>
                 <input  
                 class="login__form__password" 
-                type="text"
+                type="password"
                 placeholder="Escriba su contraseña"
-                >
+                required
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
+                data-tipo="password"
+                ><span class="input-message-error-password"></span>
                 <input  
                 class="login__form__submit" 
-                type="submit" 
+                type="submit"
+                data-submit 
                 value="Entrar">
             </form>
+        </div>
+    </section>
+    <section class="modal">
+        <div class="modal__container">
+            <h2 class="modal__titulo" data-mensaje></h2>
+            <button class="modal__bnt" data-btn-back>Volver</button>
         </div>
     </section>
 
@@ -109,5 +121,6 @@
         <p>Desarrollado por Facundo</p>
         <p>2021</p>
     </footer>
+    <script src="../controllers/login/login.js"  type='module' ></script>
 </body>
 </html>
