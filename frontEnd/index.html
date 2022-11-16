@@ -217,16 +217,26 @@
                     <div class="contact__form__input">
                         <label for="">
                             <p class="contact__form__input__label">Nombre</p> 
-                            <input class="contact__form__input__name " type="text">
+                            <input 
+                            class="contact__form__input__name " 
+                            type="text" 
+                            maxlength="40"
+                            minlength="8"
+                            required
+                            data-input-name
+                            >
                         </label>
                     </div>
                     
                     <textarea 
                     class="contact__form__msj" 
                     placeholder="Escribe tu mensaje" 
-                    cols="30" rows="10"></textarea>
+                    cols="30" rows="10" required maxlength="120" data-input-mensaje></textarea>
                     
-                    <input class="contact__form__btn" type="submit" value="Enviar mensaje">
+                    <input 
+                    class="contact__form__btn" 
+                    type="submit" 
+                    value="Enviar mensaje">
                 </form>
             </div>
         </div>
