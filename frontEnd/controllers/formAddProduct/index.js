@@ -1,7 +1,10 @@
 import { valida } from "../validates.js";
+import { submit } from "./submit.js";
 
 const inputs = document.querySelectorAll('input')
 const textareaDescripcion = document.querySelector('#descripcion')
+const form = document.querySelector('form')
+console.log("🚀 ~ file: index.js ~ line 6 ~ inputSubmit", form)
 
 textareaDescripcion.addEventListener('blur',()=>{
     valida(textareaDescripcion)
@@ -24,3 +27,8 @@ inputs.forEach((input) => {
       valida(input.target);
     });
 });
+
+form.addEventListener('submit', (event) =>{
+    event.preventDefault()
+    submit()
+})

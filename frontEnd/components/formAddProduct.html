@@ -39,7 +39,7 @@
 
     <section title="sign-in">
         <div class="login__container">
-            <form class="login__form" action="" method="post" enctype="multipart/form-data">
+            <form class="login__form"  enctype="multipart/form-data">
                 <p class="login__form__title">Agregar nuevo producto</p>
                 
                 <div class="login__form__cont__input">
@@ -82,6 +82,7 @@
                     data-tipo="precio"
                     pattern="^[0-9]+$"
                     required
+                    min="1"
                     ><span class="input-message-error-precio"></span>
                 </div>
                 
@@ -101,6 +102,7 @@
                 <input  
                 class="login__form__submit" 
                 type="submit" 
+                data-submit
                 value="Agregar Producto">
             </form>
         </div>

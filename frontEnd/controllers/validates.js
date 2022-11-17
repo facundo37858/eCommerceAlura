@@ -5,11 +5,13 @@ export const valida = (input) =>{
   
   if (input.validity.valid) {
     input.classList.remove("input-container--invalid");
+    console.log(input.validity,'typeinput')
     document.querySelector(`.input-message-error-${typeInput}`).innerHTML = "";
 
   } else if(typeInput) {
-    console.log(typeInput,'typeinput')
+    console.log(input.validity,'typeinput')
     input.classList.add("input-container--invalid");
+    console.log(document.querySelector(`.input-message-error-${typeInput}`))
     document.querySelector(`.input-message-error-${typeInput}`).innerHTML = mostrarMensajeDeError(typeInput, input);
   }
 }
@@ -40,8 +42,8 @@ const mensajesDeError = {
   },
   precio:{
     valueMissing: "El campo precio no puede estar vacío",
-    typeMismatch: "Solo numeros",
-    patternMismatch: "Solo numeros",
+    typeMismatch: "Solo numeros mayore que cero",
+    patternMismatch: "Solo numeros mayore que cero",
 
   },
   descripcion:{
@@ -56,9 +58,6 @@ const mostrarMensajeDeError=(tipoDeInput, input) =>{
   let mensaje = "";
   tipoDeErrores.forEach((error) => {
     if (input.validity[error]) {
-      // console.log(tipoDeInput, error);
-      // console.log(input.validity[error]);
-      // console.log(mensajesDeError[tipoDeInput][error]);
       mensaje = mensajesDeError[tipoDeInput][error];
     }
   });
