@@ -11,6 +11,10 @@
 }
 .login__form__cont__input{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .login__form__cont__input__title{
     position: absolute;
@@ -27,6 +31,67 @@
     border: none;
     border-radius: 4px;
     padding: 1rem 3rem .8125rem .75rem;
+}
+
+.input__image{
+    padding: 2rem 3rem .8125rem .75rem;
+}
+
+.input__image::before {
+    background-color: var(--color-secundary);
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    content: 'Seleccionar archivo'; /* testo por defecto */
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    max-height: 40%;
+    font-weight: 600;
+}
+.exito{
+    color: rgb(103, 163, 12);
+}
+.descripcion{
+    line-height: 1.5rem;
+    padding-top: 1.5rem;
+    resize: none;
+}
+
+.input-container--invalid{
+    border: solid red;
+}
+
+.input-message-error-file{
+    color: red;
+    text-align: center;
+    margin-top: 0.3rem;
+}
+
+.input-message-error-categoria {
+    color: red;
+    text-align: center;
+    margin-top: 0.3rem;
+}
+
+.input-message-error-nameProduct {
+    color: red;
+    text-align: center;
+    margin-top: 0.3rem;
+}
+
+.input-message-error-precio {
+    color: red;
+    text-align: center;
+    margin-top: 0.3rem;
+}
+
+.input-message-error-descripcion {
+    color: red;
+    text-align: center;
+    margin-top: 0.3rem;
 }
 
 .login__form__submit{
