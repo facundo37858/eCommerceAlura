@@ -39,15 +39,18 @@
 
     <section title="sign-in">
         <div class="login__container">
-            <form class="login__form" action="" method="post">
+            <form class="login__form" action="" method="post" enctype="multipart/form-data">
                 <p class="login__form__title">Agregar nuevo producto</p>
                 
                 <div class="login__form__cont__input">
                     <span class="login__form__cont__input__title">URL de la imagen</span>
                     <input 
-                    class="login__form__input" 
-                    type="text"
-                    >
+                    class="login__form__input input__image" 
+                    type="file"
+                    accept=".jpg, .jpeg, .png"
+                    data-tipo="file"
+                    required
+                    ><span class="input-message-error-file"></span>
                 </div>
 
                 <div class="login__form__cont__input">
@@ -55,7 +58,9 @@
                     <input 
                     class="login__form__input" 
                     type="text"
-                    >
+                    data-tipo="categoria"
+                    required
+                    ><span class="input-message-error-categoria"></span>
                 </div>
 
                 <div class="login__form__cont__input">
@@ -63,7 +68,10 @@
                     <input 
                     class="login__form__input" 
                     type="text"
-                    >
+                    data-tipo="nameProduct"
+                    required
+                    maxlength="20"
+                    ><span class="input-message-error-nameProduct"></span>
                 </div>
 
                 <div class="login__form__cont__input">
@@ -71,23 +79,23 @@
                     <input 
                     class="login__form__input" 
                     type="number"
-                    >
-                </div>
-
-                <div class="login__form__cont__input">
-                    <span class="login__form__cont__input__title">URL de la imagen</span>
-                    <input 
-                    class="login__form__input" 
-                    type="text"
-                    >
+                    data-tipo="precio"
+                    pattern="^[0-9]+$"
+                    required
+                    ><span class="input-message-error-precio"></span>
                 </div>
                 
                 <div class="login__form__cont__input">
                     <span class="login__form__cont__input__title">Descripción del producto</span>
-                    <input 
-                    class="login__form__input" 
+                    <textarea
+                    id="descripcion" 
+                    class="login__form__input descripcion" 
                     type="text"
-                    >
+                    data-tipo="descripcion"
+                    required
+                    maxlength="150"
+                    
+                    ></textarea><span class="input-message-error-descripcion"></span>
                 </div>
 
                 <input  
@@ -122,6 +130,7 @@
                         <a href="">Anúncie aquí</a>
                     </li>
                 </ul>
+
             </div>
 
             <div class="contact">
@@ -130,24 +139,39 @@
                     <div class="contact__form__input">
                         <label for="">
                             <p class="contact__form__input__label">Nombre</p> 
-                            <input class="contact__form__input__name " type="text">
+                            <input 
+                            class="contact__form__input__name " 
+                            type="text" 
+                            maxlength="40"
+                            minlength="8"
+                            required
+                            data-input-name
+                            >
                         </label>
                     </div>
                     
                     <textarea 
                     class="contact__form__msj" 
                     placeholder="Escribe tu mensaje" 
-                    cols="30" rows="10"></textarea>
+                    cols="30" rows="10" required maxlength="120" data-input-mensaje></textarea>
                     
-                    <input class="contact__form__btn" type="submit" value="Enviar mensaje">
+                    <input 
+                    class="contact__form__btn" 
+                    type="submit" 
+                    value="Enviar mensaje">
                 </form>
             </div>
         </div>
+
+
     </section>
+
 
     <footer>
         <p>Desarrollado por Facundo</p>
         <p>2021</p>
     </footer>
+
+    <script src="../controllers/formAddProduct/index.js" type="module"></script>
 </body>
 </html>

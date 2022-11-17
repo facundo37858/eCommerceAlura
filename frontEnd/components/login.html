@@ -69,7 +69,6 @@
             <button class="modal__bnt" data-btn-back>Volver</button>
         </div>
     </section>
-
     <section title="aboutme" class="aboutme">
         <div class="aboutme__menu">
             <div class="aboutme__menu__container">
@@ -94,6 +93,7 @@
                         <a href="">Anúncie aquí</a>
                     </li>
                 </ul>
+
             </div>
 
             <div class="contact">
@@ -102,25 +102,37 @@
                     <div class="contact__form__input">
                         <label for="">
                             <p class="contact__form__input__label">Nombre</p> 
-                            <input class="contact__form__input__name " type="text">
+                            <input 
+                            class="contact__form__input__name " 
+                            type="text" 
+                            maxlength="40"
+                            minlength="8"
+                            required
+                            data-input-name
+                            >
                         </label>
                     </div>
                     
                     <textarea 
                     class="contact__form__msj" 
                     placeholder="Escribe tu mensaje" 
-                    cols="30" rows="10"></textarea>
+                    cols="30" rows="10" required maxlength="120" data-input-mensaje></textarea>
                     
-                    <input class="contact__form__btn" type="submit" value="Enviar mensaje">
+                    <input 
+                    class="contact__form__btn" 
+                    type="submit" 
+                    value="Enviar mensaje">
                 </form>
             </div>
         </div>
+
+
     </section>
 
     <footer>
         <p>Desarrollado por Facundo</p>
         <p>2021</p>
     </footer>
-    <script src="../controllers/login/login.js"  type='module' ></script>
+    <script src="../controllers/login/index.js"  type='module' ></script>
 </body>
 </html>
