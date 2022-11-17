@@ -5,7 +5,7 @@ export const submit = () => {
     const inputPassword= document.querySelector('[data-tipo="password"]')
 
     if(inputPassword.validity.valid && inputUser.validity.valid){
-        location.href='frontEnd/components/addProduct.html'
+        location.href='addProduct.html'
     }
     if(!inputPassword.value && !inputUser.value){
         showModal('Ingrese datos')
