@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/facundo37858/eCommerceAlura/issues"
   },
-  "homepage": "https://github.com/facundo37858/eCommerceAlura#readme"
+  "homepage": "https://github.com/facundo37858/eCommerceAlura#readme",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
 }
