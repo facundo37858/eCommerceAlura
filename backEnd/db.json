@@ -1,0 +1,22 @@
+{
+    "products":[
+        {
+            "id":1,
+            "title":"XXXXX",
+            "descripcion":"xxxx xxxxx xxxxx xxxx xxxx xx",
+            "price":1000,
+            "url_img":"xxxxxx",
+            "category":"xxxxx"
+
+        },
+        {
+            "id":2,
+            "title":"YYYY",
+            "descripcion":"xxxx xxxxx xxxxx xxxx xxxx xx",
+            "price":1000,
+            "url_img":"xxxxxx",
+            "category":"xxxxx"
+
+        }
+    ]
+}
