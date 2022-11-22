@@ -32,6 +32,7 @@
 }
 .header__icon{
     color: var(--color-secundary);
+    cursor: pointer;
 }
 .header__search__input{
     display: none;
