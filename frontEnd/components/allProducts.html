@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/dfb27723a2.js" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/base/base.css">
+    <link rel="stylesheet" href="../styles/products/styles.css">
+    
+    <link rel="stylesheet" href="../styles/products/products.css">
+    <link rel="stylesheet" href="../styles/products/aboutme.css">
+    <link rel="stylesheet" href="../styles/products/contact.css">
+    <link rel="stylesheet" href="../styles/products/footer.css">
+    <link rel="stylesheet" href="../styles/login/login.css">
+    <link rel="stylesheet" href="../styles/addProduct/addProduct.css">
+    <link rel="stylesheet" href="../styles/products/header.css">
+    <title>E-Commerce-Alura</title>
+</head>
+<body>
+    <header>
+        <nav class="header">
+            <img class="header__imag" src="../assets/imags/logo.svg" alt="logo">
+            <button class="header__button" 
+            data-login-button
+            onclick="naviateLogin()"
+            >
+            Login
+            </button>
+            <div class="header__search">
+                <i class="fa-solid fa-magnifying-glass header__icon" data-icon-serach></i>
+                <input 
+                class="header__search__input" 
+                type="text"
+                placeholder="¿Qué deseas buscar?"
+                data-input-search
+                >
+            </div>
+        </nav>
+    </header>
+
+    <section class="addProduct">
+        <!-- <div class="header__container">
+            <p class="header__container__title">Todos los productos</p>
+            <button class="header__container__botton">Agregar producto</button>
+        </div> -->
+
+        <div class="products__container">
+            <div class="header__container">
+                <p class="header__container__title">Todos los productos</p>
+            </div>
+    
+            <ul class="products__container__itmes">
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="../assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">R$ 60,00</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
+                </li>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="../assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">R$ 60,00</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
+                </li>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="../assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">R$ 60,00</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
+                </li>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="../assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">R$ 60,00</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
+                </li>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="../assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">R$ 60,00</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
+                </li>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="../assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">R$ 60,00</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
+                </li>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="../assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">R$ 60,00</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
+                </li>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="../assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">R$ 60,00</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
+                </li>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="../assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">R$ 60,00</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
+                </li>
+                <li class="products__container__itme">
+                    <img class="product__container__itme__img" src="../assets/imags/star-wars.png"="" alt="product">
+                    <p class="product__container__itme__title">Producto XYZ</p>
+                    <p class="product__container__itme__price">R$ 60,00</p>
+                    <a class="product__container__itme__link" href="#">Ver producto</a>
+                </li>
+
+
+
+            </ul>
+        </div>
+
+    </section>
+
+    <section title="aboutme" class="aboutme">
+        <div class="aboutme__menu">
+            <div class="aboutme__menu__container">
+                <img class="aboutme__image" src="../assets/imags/logo.svg" alt="logo">
+                <ul class="aboutme__list">
+                    <li class="aboutme__list__item">
+                        <a href="">Quienes somos</a>
+                    </li>
+                    <li class="aboutme__list__item">
+                        <a href="">Política de privacidad</a>
+                    </li>
+                    <li class="aboutme__list__item">
+                        <a href="">Programa de fidelidad</a>
+                    </li>
+                    <li class="aboutme__list__item">
+                        <a href="">Nuestras tiendas</a>
+                    </li>
+                    <li class="aboutme__list__item">
+                        <a href="">Quiero ser franquiciado</a>
+                    </li>
+                    <li class="aboutme__list__item">
+                        <a href="">Anúncie aquí</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <p class="contact__title">Hable con nosotros</p>
+                <form action="" method="post" class="contact__form">
+                    <div class="contact__form__input">
+                        <label for="">
+                            <p class="contact__form__input__label">Nombre</p> 
+                            <input class="contact__form__input__name " type="text">
+                        </label>
+                    </div>
+                    
+                    <textarea 
+                    class="contact__form__msj" 
+                    placeholder="Escribe tu mensaje" 
+                    cols="30" rows="10"></textarea>
+                    
+                    <input class="contact__form__btn" type="submit" value="Enviar mensaje">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Desarrollado por Facundo</p>
+        <p>2021</p>
+    </footer>
+    
+</body>
+</html>
