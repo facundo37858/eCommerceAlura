@@ -1,10 +1,18 @@
 import { searchProduct } from "./controllers/search.js"
 
-const request = await searchProduct('YYYY')
-
 const searchButton = document.querySelector('[data-icon-serach]')
+const verTodo = document.querySelectorAll('[data-verTodo]')
+const formAddPrroduct = document.querySelector('[data-form-addProduct]')
 
-searchButton.addEventListener('click',async ()=>{
+verTodo.forEach(element=>{
+    element.addEventListener('click',async() => {
+        // const allProducts = await getAllProducts()
+        location.href="components/allProducts.html"
+        // console.log(allProducts)
+    })
+})
+
+searchButton ? searchButton.addEventListener('click',async ()=>{
     const searchValue = document.querySelector('[data-input-search]')
 
     if(searchValue.value){
@@ -13,4 +21,4 @@ searchButton.addEventListener('click',async ()=>{
         console.log(data):
         console.log('NOT FOUND')
     }
-})
+}) : null
