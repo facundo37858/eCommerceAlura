@@ -26,6 +26,7 @@
     text-decoration: none;
     font-weight: 500;
     color: var(--color-secundary);
+    cursor: pointer;
 }
 
 .products__container__itmes{

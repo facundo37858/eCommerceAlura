@@ -5,6 +5,9 @@
     margin: 1.3rem 1rem;
 
 }
+.heder__link__home{
+    cursor: pointer;
+}
 .header__imag{
     width: 100px;
     height: 28px;
