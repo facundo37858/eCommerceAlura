@@ -25,7 +25,9 @@
 <body>
     <header>
         <nav class="header">
-            <img class="header__imag" src="../assets/imags/logo.svg" alt="logo">
+            <a class="heder__link__home" data-link-home>
+                <img class="header__imag" src="../assets/imags/logo.svg" alt="logo">
+            </a>
             <button class="header__button" 
             data-login-button
             onclick="naviateLogin()"
@@ -34,7 +36,8 @@
             </button>
             <div class="header__search">
                 <i class="fa-solid fa-magnifying-glass header__icon" data-icon-serach></i>
-                <input 
+                <input
+                id="search" 
                 class="header__search__input" 
                 type="text"
                 placeholder="¿Qué deseas buscar?"
@@ -176,6 +179,7 @@
         <p>2021</p>
     </footer>
     <script src="../../backEnd/index.js" type="module"></script>
+    <script src="../controllers/index.js"></script>
     
 </body>
 </html>
