@@ -22,23 +22,44 @@
     color: var(--color-secundary);
     cursor: pointer;
 }
-.header__search{
-    /* display: flex;
-    width: 25rem;
+.header__button-none{
+    display: none;
+}
+.header__search-show{
+    display: flex;
+    /* width: 25rem; */
     align-items: center;
     justify-content: flex-start;
     flex-direction: row-reverse;
     gap: 1rem;
     height: 2.5rem;
     border-radius: 20px;
-    background-color: var(--color-background-input); */
+    background-color: var(--color-background-input); 
 }
 .header__icon{
     color: var(--color-secundary);
     cursor: pointer;
+    margin-right: 1rem;
 }
 .header__search__input{
     display: none;
+}
+.header__search__input-show{
+    width: 100%;
+    margin-left: 1rem;
+    border: none;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: .875rem;
+    color: var(--color-text-secundary);
+    line-height: 1rem;
+    display: block;
+    
+}
+.header__search__input-show:focus-visible{
+    border: none;
+    outline: none;
+    color:var(--color-text-primary)
 }
 
 @media screen and (min-width: 1024px) {
