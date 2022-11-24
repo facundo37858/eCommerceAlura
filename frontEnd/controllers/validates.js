@@ -1,17 +1,13 @@
 
 export const valida = (input) =>{
   const typeInput = input.dataset.tipo
-  console.log("🚀 ~ file: validates.js ~ line 4 ~ valida ~ typeInput", typeInput)
   
   if (input.validity.valid) {
     input.classList.remove("input-container--invalid");
-    console.log(input.validity,'typeinput')
     document.querySelector(`.input-message-error-${typeInput}`).innerHTML = "";
 
   } else if(typeInput) {
-    console.log(input.validity,'typeinput')
     input.classList.add("input-container--invalid");
-    console.log(document.querySelector(`.input-message-error-${typeInput}`))
     document.querySelector(`.input-message-error-${typeInput}`).innerHTML = mostrarMensajeDeError(typeInput, input);
   }
 }
